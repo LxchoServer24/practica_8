@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main(){
+int i;
+char nombres[5][201];
+for(i=0;i<5;i++){
+printf("dame el nombre:");
+fgets(nombres[i],sizeof(nombres[i]),stdin);
+}
+printf("los nombre son:\n");
+for(i=0;i<5;i++){
+    printf("%s\n",nombres[i]);
+}
+return 0;
+}
